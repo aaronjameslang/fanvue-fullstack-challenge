@@ -1,10 +1,15 @@
 import type { AppProps } from "next/app";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import lightTheme from "../themes/lightTheme";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={lightTheme}>
+      <Head>
+        <html lang='en-uk' />
+        <title>FanVue Fullstack Challenge</title>
+      </Head>
       <CssBaseline />
       <Component {...pageProps} />
     </ThemeProvider>
