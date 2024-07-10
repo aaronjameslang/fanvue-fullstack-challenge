@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { InferGetServerSidePropsType } from "next";
 import { PostCard } from "./PostCard";
 import { getPosts } from "./getPosts";
@@ -9,11 +9,14 @@ export default  function FeedPage({posts}: Props) {
   // TODO what if there are no posts? What about paging?
   return (
     <>
-      <Typography variant="h1">Feed</Typography>
-      <Stack spacing={2}>
+      <Box textAlign={"center"} my={8}>
+        <Typography component="h1" variant="h3">
+          Feed
+        </Typography>
+      </Box>
+      <Stack spacing={2} style={{maxWidth: '480px', margin: 'auto'}}>
         {posts.map((post) => (
           <PostCard key={post.id} {...post} />
-          // <pre key={post.id} {...post} >{JSON.stringify(post, null, 2)}</pre>
         ))}
       </Stack>
     </>
