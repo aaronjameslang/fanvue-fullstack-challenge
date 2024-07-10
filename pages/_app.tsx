@@ -1,7 +1,7 @@
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import type { AppProps } from "next/app";
-import { ThemeProvider, CssBaseline } from "@mui/material";
-import lightTheme from "../themes/lightTheme";
 import Head from "next/head";
+import lightTheme from "../themes/lightTheme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <html lang='en-uk' />
         <title>FanVue Fullstack Challenge</title>
+        <meta name='description' content='FanVue Fullstack Challenge' />
       </Head>
       <CssBaseline />
       <Component {...pageProps} />

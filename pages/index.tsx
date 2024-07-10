@@ -1,6 +1,5 @@
 import { Box, Grid, Link, Paper, Typography } from "@mui/material";
 import type { NextPage } from "next";
-import Head from "next/head";
 import NextLink from "next/link";
 
 const Home: NextPage = () => {

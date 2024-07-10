@@ -29,3 +29,11 @@ Note:
 
 - Styling is not required, you should use MUI5 components out-of-the box, check docs here https://mui.com/material-ui/
 - You can install your favourite fetch library, but you can also use the built-in fetch API
+
+## Futher TODOs
+
+- Test on various browsers
+- Review page performance and optimse
+- Set up cypress for testing
+- A distinct title and meta descriptions for each page
+- Add more meta tags
