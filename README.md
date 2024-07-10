@@ -37,3 +37,14 @@ Note:
 - Set up cypress for testing
 - A distinct title and meta descriptions for each page
 - Add more meta tags
+- Set up CI/CD with tests, linting, prettier
+- Automate deploy process
+- Update node modules
+- Improve UI when
+  + viewing comments
+  + opening an image fullscreen
+- Peer review code
+- Add monitoring such as sentry
+- Test with non-english characters
+- npm audit
+- Update README if this was a real project
