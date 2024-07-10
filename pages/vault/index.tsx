@@ -27,9 +27,11 @@ export default  function VaultPage({photos}: Props) {
   // TODO next/image performs badly, investigate
   // This page isn't very performant in general, consider SSR a skeleton,
   //   and populating the images with a client-side fetch
+  // or paging / infinite scroll
 }
 
 export async function getServerSideProps() {
   const photos = await getPhotos();
+  photos.length = 20;
   return { props: {photos} };
 }
